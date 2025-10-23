@@ -9,4 +9,3 @@ This repository contains YAML configuration given to Terraform to manage setting
     - [⚙️ Take a look at an example repo configuration](https://gist.github.com/tabathad/fda2f20e04ca0ab7678b47bd85fdbcbb#file-gcss-pre-publish-oss-yaml)
 - [🍴 Handling Forks](https://github.com/G-Research/github-terraformer/blob/main/README.md#-handling-forks)
 - [🧩 Developers Guide](https://github.com/G-Research/github-terraformer/blob/main/DEVELOPERS_GUIDE.md)
-- [Known Issues & Improvements](https://github.com/orgs/G-Research/projects/5/views/6)
