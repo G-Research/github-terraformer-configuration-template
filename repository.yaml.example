@@ -1,5 +1,4 @@
 # GitHub Repository Configuration Template
-# STAGING OSS REPO
 
 # =============================================================================
 # BASIC REPOSITORY SETTINGS (Required)
@@ -20,8 +19,8 @@ has_downloads: true # Most common: true
 # =============================================================================
 # MERGE SETTINGS
 # =============================================================================
-allow_merge_commit: false   # Most common: false
-allow_rebase_merge: false   # Most common: false
+allow_merge_commit: true    # Most common: true
+allow_rebase_merge: true    # Most common: true
 allow_squash_merge: true    # Most common: true
 allow_auto_merge: false     # Most common: false
 allow_update_branch: false  # Most common: false
@@ -63,19 +62,19 @@ has_discussions: false              # Most common: false
 #  - username5
 #  - username6
 
-  # =============================================================================
-  # TEAMS (Optional)
-  # =============================================================================
-  # Team-based permissions
-push_teams:
-  - gr-oss
-#  - team-name
+# =============================================================================
+# TEAMS (Optional)
+# =============================================================================
+# Team-based permissions
+#push_teams:
+#  - team1
+#  - team2
 #maintain_teams:
-#  - gr-oss
-#  - team-name
+#  - team3
+#  - team4
 #admin_teams:
-#  - team-name
-
+#  - team5
+#  - team6
 # =============================================================================
 # GITHUB PAGES (Optional)
 # =============================================================================
@@ -88,7 +87,6 @@ push_teams:
 # =============================================================================
 # BRANCH PROTECTION - DEPRECATED STYLE (Optional)
 # =============================================================================
-# Use this for basic branch protection
 #branch_protections_v4:
 #   - pattern: main
 #     allows_deletions: false
@@ -112,36 +110,8 @@ push_teams:
 # =============================================================================
 # RULESETS - ADVANCED STYLE (Recommended)
 # =============================================================================
-# Use this for advanced protection rules
 # This is the recommended approach for new repositories
 rulesets:
-  # Allow bot to create tags (common pattern for release bots)
-  - enforcement: active
-    name: Allow bot to create tags
-    rules:
-      creation: true
-    target: tag
-    bypass_actors:
-      - name: app/G-Research/REPO_NAME-release-bot
-        bypass_mode: always
-    conditions:
-      ref_name:
-        include:
-          - ~ALL
-
-  # Protect all tags
-  - enforcement: active
-    name: Protect all tags
-    rules:
-      deletion: true
-      non_fast_forward: true
-      update: true
-    target: tag
-    conditions:
-      ref_name:
-        include:
-          - ~ALL
-
   # Protect main branch with standard requirements
   - enforcement: active
     name: Protect main branch
@@ -158,7 +128,7 @@ rulesets:
       required_status_checks:
         required_check:
           - context: All required checks succeeded
-            integration_id: 123456  # Replace with actual integration ID
+            integration_id: 123456  # Replace with actual integration ID or 15368 for GitHub Actions
         strict_required_status_checks_policy: true
     target: branch
     conditions:

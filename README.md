@@ -1,5 +1,5 @@
 # Github Terraformer configuration
-This repository contains YAML configuration given to Terraform to manage settings of G-Research org repos.
+This repository contains YAML configuration given to Terraform to manage the settings of this org's repos.
 
 ## Table of Contents
 
