@@ -128,7 +128,7 @@ rulesets:
       required_status_checks:
         required_check:
           - context: All required checks succeeded
-            integration_id: 123456  # Replace with actual integration ID or 15368 for GitHub Actions
+            source: Github Actions
         strict_required_status_checks_policy: true
     target: branch
     conditions:
