@@ -140,3 +140,10 @@ rulesets:
 # SECURITY SETTINGS (Required)
 # =============================================================================
 vulnerability_alerts_enabled: true
+
+# =============================================================================
+# HIGH INTEGRITY (Optional)
+# =============================================================================
+# Enabling high integrity features creates two rulesets - "Protect tags" and "Protect default branch"
+#high_integrity:
+#  enabled: true
