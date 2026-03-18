@@ -82,7 +82,7 @@ has_discussions: false              # Most common: false
 #     cname: example.com
 #     branch: main
 #     path: /
-#     build_type: workflow  # Options: workflow, legacy
+#     build_type: workflow  # Options: workflow, legacy - if using `workflow`, don't set `branch` and `path` as they are needed for `legacy` build type
 
 # =============================================================================
 # BRANCH PROTECTION - DEPRECATED STYLE (Optional)
