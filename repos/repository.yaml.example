@@ -80,9 +80,7 @@ has_discussions: false              # Most common: false
 # =============================================================================
 # pages:
 #     cname: example.com
-#     branch: main
-#     path: /
-#     build_type: workflow  # Options: workflow, legacy
+#     build_type: workflow  # Options: workflow, legacy - if set to `legacy`, set `branch` and `path`
 
 # =============================================================================
 # BRANCH PROTECTION - DEPRECATED STYLE (Optional)
