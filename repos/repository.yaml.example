@@ -14,7 +14,7 @@ default_branch: main  # Most common: main
 has_issues: true    # Most common: true
 has_projects: true  # Most common: true
 has_wiki: false     # Most common: true
-has_downloads: true # Most common: true
+has_downloads: false # GitHub removed the Downloads feature; only false is valid
 
 # =============================================================================
 # MERGE SETTINGS
